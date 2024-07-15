@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CI/CD Pipeline with GitHub Actions</title>
+    <link href="https://cdn.tailwindcss.com/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Add animation to the title */
+        .animated-title {
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        /* Define the fadeInDown animation */
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Add animation to the paragraphs */
+        .animated-paragraph {
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        /* Define the fadeInUp animation */
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="text-4xl font-bold text-center mt-8 animated-title">CI/CD Pipeline with GitHub Actions</h1>
+
+    <p class="text-lg text-center mt-4 animated-paragraph">
+        Welcome to the CI/CD Pipeline with GitHub Actions! This page is automatically generated and deployed using
+        GitHub Actions.
+    </p>
+
+    <div class="container mx-auto mt-8">
+        <h2 class="text-2xl font-bold">Features:</h2>
+        <ul class="list-disc ml-8 mt-4">
+            <li>Automated testing</li>
+            <li>Continuous integration</li>
+            <li>Continuous deployment</li>
+            <li>Version control</li>
+        </ul>
+    </div>
+
+    <div class="container mx-auto mt-8">
+        <h2 class="text-2xl font-bold">GitHub Actions:</h2>
+        <p class="mt-4">
+            GitHub Actions is a powerful automation tool provided by GitHub. It allows you to automate various tasks
+            within your software development workflow. With GitHub Actions, you can define custom workflows using YAML
+            syntax, which can be triggered by events such as code pushes, pull requests, or scheduled intervals.
+        </p>
+        <p class="mt-4">
+            To write scripts and upload files to an EC2 instance using GitHub Actions, you can utilize the available
+            actions and plugins provided by the GitHub Actions ecosystem. For example, you can use the "aws-actions/configure-aws-credentials"
+            action to configure AWS credentials, and then use the "appleboy/scp-action" action to securely copy files to
+            your EC2 instance.
+        </p>
+        <p class="mt-4">
+            By combining these actions and writing custom scripts, you can automate the process of uploading files to
+            your EC2 instance as part of your CI/CD pipeline. This enables you to easily deploy your application or
+            perform other necessary tasks on your EC2 instance.
+        </p>
+    </div>
+
+    <!-- Rest of your HTML code -->
+
+</body>
+
+</html>
